@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Joke } from '../type/joke';
 import { Demo } from './Demo';
 export default function Card() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState < Joke[]| null>([]);
 
   useEffect(() => {
     const fetchJokes = async () => {
