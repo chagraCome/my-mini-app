@@ -8,18 +8,18 @@ import Typography from '@mui/material/Typography';
 
 
 
-export default function Demo() {
+export default function Demo({ joke }) {
   return (
     <Card sx={{ maxWidth: 400 }}>
       <CardContent>
         <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 14 }}>
-          Programming 
+        {joke.type}
         </Typography>
         <Typography variant="h5" component="div">
-          where is the joke
+        {joke.setup}
         </Typography>
         <Typography variant="body2">
-          well meaning and kindly.
+        {joke.punchline}
           <br />
         </Typography>
       </CardContent>
