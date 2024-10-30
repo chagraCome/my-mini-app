@@ -12,7 +12,14 @@ type DemoProps = {
 
 const JokeCard: React.FC<DemoProps> = ({ joke }) => {
   return (
-    <Card sx={{ maxWidth: 400 }}>
+    <Card sx={{ 
+      maxWidth: 400,
+      mx: "auto",
+      mb: 5,
+      bgcolor: "grey.50",
+      color: "grey.800",
+      border: "1px solid ",
+      borderColor: "lightgrey" }}>
       <CardContent>
         <Typography gutterBottom sx={{ color: "text.secondary", fontSize: 14 }}>
           {joke.type}
