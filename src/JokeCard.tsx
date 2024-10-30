@@ -13,7 +13,7 @@ type DemoProps = {
 const JokeCard: React.FC<DemoProps> = ({ joke }) => {
   return (
     <Card sx={{ 
-      maxWidth: 400,
+      maxWidth: 600,
       mx: "auto",
       mb: 5,
       bgcolor: "grey.50",
